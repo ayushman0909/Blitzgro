@@ -15,8 +15,8 @@ const App = () => {
       <Navbar/>
       <div className="px-1 border h-auto border-black ">
        <Routes>
-        <Route path="/" element={<Navigate to={"/home"} replace/>}/>
-        <Route path='/home' element={<Home/>}/>
+        <Route path="/" element={<Home/>}/>
+        <Route path='/home' element={<Navigate to={"/"} replace/>} />
         <Route path='/services' element={<Service/>}/>
         <Route path='/about-us' element={<Aboutus/>}/>
         <Route path='/case-studies' element={<Casestudies/>}/>
