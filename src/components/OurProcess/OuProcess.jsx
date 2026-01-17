@@ -143,7 +143,7 @@ export default function Features5() {
                 </div>
               </div>
               
-              <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-white dark:bg-black border-4 border-blue-500 rounded-full z-10"></div>
+              <div className=" hidden md:block md:absolute left-1/2 transform sm:hidden -translate-x-1/2 w-4 h-4 bg-white dark:bg-black border-4 border-blue-500 rounded-full z-10"></div>
             </div>
           ))}
         </div>

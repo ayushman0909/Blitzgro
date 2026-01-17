@@ -70,7 +70,7 @@ export default function WhyChooseUs() {
                   <span className="text-blue-600 dark:text-blue-400 text-sm font-semibold uppercase tracking-wider">
                     {feature.subtitle}
                   </span>
-                  <h3 className="text-2xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mt-2">
+                  <h3 className="text-xl sm:text-xl md:text-4xl font-bold text-gray-900 dark:text-white mt-2">
                     {feature.title}
                   </h3>
                 </div>
