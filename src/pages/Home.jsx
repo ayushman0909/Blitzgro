@@ -7,6 +7,7 @@ import Herosectionimage3 from "../assets/homeherosection3.png";
 import WhoWeServe from "../components/WhoWeServe/WhoWeServe";
 import WhyChooseUs from "../components/WhyChooseUs/WhyChooseUs";
 import OurProcess from "../components/OurProcess/OuProcess"
+import OurClients from '../components/OurClients/OurClients';
 const Home = () => {
 
 const heroSectionData={
@@ -31,6 +32,7 @@ const stats = [
        <WhoWeServe/>
        <WhyChooseUs/>
        <OurProcess/>
+       <OurClients/>
     </div>
   )
 }
