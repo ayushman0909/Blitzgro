@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from './components/Navbar/Navbar'
-import { Routes,Route } from 'react-router-dom'
+import { Routes,Route, Navigate } from 'react-router-dom'
 import Home from "./pages/Home.jsx"
 import Aboutus from "./pages/Aboutus.jsx"
 import Service from "./pages/Service.jsx"
@@ -15,6 +15,7 @@ const App = () => {
       <Navbar/>
       <div className="px-1 border h-auto border-black ">
        <Routes>
+        <Route path="/" element={<Navigate to={"/home"} replace/>}/>
         <Route path='/home' element={<Home/>}/>
         <Route path='/services' element={<Service/>}/>
         <Route path='/about-us' element={<Aboutus/>}/>
