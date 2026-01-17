@@ -112,7 +112,7 @@ export default function Features5() {
               }`}
             >
               <div
-                className={`w-full border border-amber-200  rounded-2xl md:w-6/12 ${
+                className={`w-full border border-amber-200  rounded-2xl md:w-6/12 mb-1 ${
                   index % 2 === 0 ? "md:pr-8 text-right" : "md:pl-8 text-left"
                 }`}
               >
