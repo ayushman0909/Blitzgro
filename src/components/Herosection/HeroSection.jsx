@@ -42,7 +42,7 @@ export default function HeroSection({heroSectionData,stats}) {
         <h1
           className="text-4xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl
           font-bold bg-linear-to-r from-black to-gray-700
-          bg-clip-text text-transparent dark:from-white dark:to-gray-300
+          bg-clip-text text-transparent 
           mb-6 tracking-tight leading-tight"
         >
           {heading1}
