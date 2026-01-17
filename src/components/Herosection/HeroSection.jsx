@@ -67,7 +67,7 @@ export default function HeroSection({heroSectionData,stats}) {
         <div className="flex flex-col sm:flex-row gap-6 justify-start mb-5">
           <button
             className="group px-10 py-5 bg-linear-to-r from-green-800 to-green-600
-            dark:bg-white text-white dark:text-black font-bold rounded-full
+            dark:bg-white text-white dark:text-white font-bold rounded-full
             hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
           >
             <span className="flex items-center gap-3">
@@ -108,7 +108,7 @@ export default function HeroSection({heroSectionData,stats}) {
                 <div className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-2">
                   <CountUp value={stat.value} />
                 </div>
-                <div className="text-sm  font-bold text-gray-800 dark:text-gray-400 uppercase tracking-wider">
+                <div className="text-sm  font-bold text-gray-800 dark:text-gray-700 uppercase tracking-wider">
                   {stat.label}
                 </div>
               </div>
