@@ -8,6 +8,7 @@ import WhoWeServe from "../components/WhoWeServe/WhoWeServe";
 import WhyChooseUs from "../components/WhyChooseUs/WhyChooseUs";
 import OurProcess from "../components/OurProcess/OuProcess"
 import OurClients from '../components/OurClients/OurClients';
+import PureRoutes from '../components/PureRoutes/PureRoutes';
 const Home = () => {
 
 const heroSectionData={
@@ -29,6 +30,7 @@ const stats = [
   return (
     <div>
       <HeroSection heroSectionData={heroSectionData} stats={stats}/>
+      <PureRoutes/>
        <WhoWeServe/>
        <WhyChooseUs/>
        <OurProcess/>
