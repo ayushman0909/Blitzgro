@@ -107,12 +107,12 @@ export default function Features5() {
           {timeline.map((item, index) => (
             <div
               key={index}
-              className={`relative flex items-center  ${
+              className={`relative flex items-center mb-2 ${
                 index % 2 === 0 ? "justify-start" : "justify-end"
               }`}
             >
               <div
-                className={`w-full border border-amber-200  rounded-2xl md:w-6/12 mb-1 ${
+                className={`w-full border border-amber-200  rounded-2xl md:w-6/12  ${
                   index % 2 === 0 ? "md:pr-8 text-right" : "md:pl-8 text-left"
                 }`}
               >
