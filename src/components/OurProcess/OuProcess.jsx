@@ -112,11 +112,11 @@ export default function Features5() {
               }`}
             >
               <div
-                className={`w-full md:w-6/12 ${
+                className={`w-full border border-amber-200  rounded-2xl md:w-6/12 ${
                   index % 2 === 0 ? "md:pr-8 text-right" : "md:pl-8 text-left"
                 }`}
               >
-                <div className="bg-white dark:bg-zinc-900 p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div className="bg-white dark:bg-zinc-900 p-6   rounded-2xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-2 duration-300">
                   <div className={`inline-block px-3 py-1 rounded-full text-white text-sm font-semibold mb-4 ${item.color}`}>
                     {item.year}
                   </div>
@@ -152,7 +152,7 @@ export default function Features5() {
           <p className="text-lg text-gray-600 dark:text-gray-400 mb-6">
             And this is just the beginning...
           </p>
-          <button className="px-8 py-3 bg-linear-0-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold rounded-lg shadow-lg transform hover:scale-105 transition-all duration-200">
+          <button className="px-8 py-3 bg-linear-to-r text-white bg- from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700  font-semibold rounded-lg shadow-lg transform hover:scale-105 transition-all duration-200">
             Join Our Journey
           </button>
         </div>
