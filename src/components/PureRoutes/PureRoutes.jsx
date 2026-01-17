@@ -1,5 +1,5 @@
 import React from 'react'
-import PureRoute from "../../assets/Home/pureRoutes/PureRoute.png"
+import PureRoute from "../../assets/Home/pureRoutes/pureRoute.png"
 import { Link } from 'react-router-dom'
 
 const PureRoutes = () => {
