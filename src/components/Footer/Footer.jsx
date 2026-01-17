@@ -14,7 +14,7 @@ export default function Footer() {
     <footer className="bg-gray-100 dark:bg-black w-full border border-amber-600">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="py-12 border-t border-gray-200 dark:border-zinc-800">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
             <div className="lg:col-span-2">
               <h3 className="text-2xl font-bold text-green-800 dark:text-white mb-4">
                 Stay Updated
@@ -51,7 +51,7 @@ export default function Footer() {
             </div>
 
             <div>
-              <h4 className="text-md font-extrabold  text-green-800  dark:text-white uppercase tracking-wider mb-4">
+              <h4 className="text-xl font-extrabold  text-green-800  dark:text-white  tracking-wider mb-4">
                 Quick Links
               </h4>
               <ul className="space-y-3">
@@ -88,6 +88,21 @@ export default function Footer() {
                   </Link>
                 </li>
               </ul>
+            </div>
+            <div>
+              <h4 className="text-xl font-extrabold  text-green-800  dark:text-white  tracking-wider mb-4">
+                Our Strategic Network
+              </h4>
+               <ul className="space-y-3">
+                <li>
+                  <Link
+                    to="https://pureroutes.com/" target="_blank"
+                    className="text-sm text-gray-800 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors"
+                  >
+                   PureRoutes
+                  </Link>
+                </li>
+                </ul>
             </div>
           </div>
         </div>

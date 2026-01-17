@@ -1,5 +1,6 @@
 import React from 'react'
 import PureRoute from "../../assets/Home/pureRoutes/PureRoute.png"
+import { Link } from 'react-router-dom'
 
 const PureRoutes = () => {
   return (
@@ -20,8 +21,8 @@ const PureRoutes = () => {
           A sustainability-focused supply chain & logistics platform helping food businesses optimize routes, reduce costs, and lower carbon footprint.
           
           </p>
-         <button className='bg-linear-to-r from-green-800 to-green-600
-            dark:bg-white text-white dark:text-white  px-10 py-2 rounded-3xl text-md font-bold sm:text-md hover:shadow-2xl transform hover:scale-105 transition-all duration-300 md:text-lg  md:w-1/2  mt-5 sm:w-full cursor-pointer'>Visit PureRoutes →</button>
+         <Link to={"https://pureroutes.com/"}  target="_blank" className='bg-linear-to-r from-green-800 to-green-600 text-center
+            dark:bg-white text-white dark:text-white  px-10 py-2 rounded-3xl text-md font-bold sm:text-md hover:shadow-2xl transform hover:scale-105 transition-all duration-300 md:text-lg  md:w-2/5  mt-5 sm:w-full cursor-pointer'>Visit PureRoutes →</Link>
           </div>
           </div>
         </div>

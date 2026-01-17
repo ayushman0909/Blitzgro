@@ -1,5 +1,6 @@
 import { useState,useEffect } from "react";
 import CountUp from "../Counter/Countup";
+import { Link } from "react-router-dom";
 
 export default function HeroSection({heroSectionData,stats}) {
   const {heading1,heading2,subheading,cta1,cta2,bannerimage1,bannerimage2,bannerimage3}=heroSectionData;
@@ -65,13 +66,13 @@ export default function HeroSection({heroSectionData,stats}) {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-6 justify-start mb-5">
-          <button
+          <Link to={cta1.path}
             className="group px-10 py-5 bg-linear-to-r from-green-800 to-green-600
             dark:bg-white text-white dark:text-white font-bold rounded-full
             hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
           >
             <span className="flex items-center gap-3">
-              {cta1}
+              {cta1.title}
               <svg
                 className="w-5 h-5 group-hover:translate-x-1 transition-transform"
                 fill="none"
@@ -86,15 +87,15 @@ export default function HeroSection({heroSectionData,stats}) {
                 />
               </svg>
             </span>
-          </button>
+          </Link>
 
-          <button
+          <Link to={cta2.path}
             className="px-10 py-5  bg-linear-to-r from-gray-900 to-gray-500 dark:border-white
             text-white dark:text-white font-bold rounded-full
             hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
           >
-            {cta2}
-          </button>
+            {cta2.title}
+          </Link>
         </div>
       </div>
     
