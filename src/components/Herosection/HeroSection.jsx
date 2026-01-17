@@ -34,7 +34,7 @@ export default function HeroSection({heroSectionData,stats}) {
         ))}
 
         {/* Optional dark overlay */}
-        <div className="absolute inset-0 bg-white/10  dark:bg-black/40" />
+        <div className="absolute inset-0 bg-white/10   dark:bg-black/70" />
       </div>
 
       {/* 🔥 Content */}
@@ -42,7 +42,7 @@ export default function HeroSection({heroSectionData,stats}) {
         <h1
           className="text-4xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl
           font-bold bg-linear-to-r from-black to-gray-700
-          bg-clip-text text-transparent 
+          bg-clip-text text-transparent dark:from-white dark:to-gray-500
           mb-6 tracking-tight leading-tight"
         >
           {heading1}
@@ -58,7 +58,7 @@ export default function HeroSection({heroSectionData,stats}) {
 
         <p
           className="text-base sm:text-lg md:text-xl lg:text-2xl
-          text-gray-700 dark:text-gray-400 mb-10 max-w-3xl
+          text-gray-700 dark:text-gray-700 mb-10 max-w-3xl
           leading-relaxed font-medium"
         >
          {subheading}
