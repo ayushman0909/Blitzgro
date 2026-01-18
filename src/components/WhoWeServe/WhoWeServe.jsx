@@ -1,41 +1,19 @@
-export default function WhoWeServe() {
-  const features = [
-    {
-      title: "New QSRs Startups",
-      description: "Short Format QSR, Long Format QSR, Kiosk Formats",
-      icon: "⚡"
-    },
-    {
-      title: "Expansion Of Existing Brands",
-      description: "Food Ventures Looking To Transforming Their Business Towards Scalability",
-      icon: "🔒"
-    },
-    {
-      title: "International Brands",
-      description: "SSteering Global Food Brands Into The Dynamic Indian Market",
-      icon: "☁️"
-    },
-    {
-      title: "Cafes, Diners And Bars",
-      description: "Experience Driven Coffee Shops, Diners, And Trendy Bars.",
-      icon: "📊"
-    }
-    
-  ];
+export default function WhoWeServe({features,headings}) {
+ 
 
   return (
     <section className="py-10 px-4 bg-white dark:bg-black">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-2xl sm:text-2xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-           Who We Serve
+          {headings.heading}
           </h2>
           <p className="text-lg sm:text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            EMPOWERING DIVERSE SECTORS
+            {headings.subheading}
           </p>
         </div>
 
-        <div className="grid grid-cols-1 text-center   md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 text-left   md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature, index) => (
             <div
               key={index}
