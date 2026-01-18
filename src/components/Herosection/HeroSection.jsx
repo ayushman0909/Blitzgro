@@ -17,7 +17,7 @@ export default function HeroSection({heroSectionData,stats}) {
 
   return (
     
-    <section className="relative w-full mb-2 rounded-b-xl min-h-screen overflow-hidden z-30 border shadow-2xl border-gray-300">
+    <section className="relative w-full mb-2 rounded-b-xl  overflow-hidden z-30 border shadow-2xl border-gray-300">
 
       {/* 🔥 Background Images */}
       <div className="absolute inset-0">
