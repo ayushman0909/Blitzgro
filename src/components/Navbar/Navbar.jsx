@@ -290,19 +290,19 @@ export default function Navbar() {
           </NavLink>
 
           {/* Services Dropdown */}
-          <button
-            onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
+          <NavLink to={"/services"}
+            
             className="w-full flex justify-between items-center px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-100 rounded-lg"
           >
             Services
-            <span
+            <span onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
               className={`${
                 mobileServicesOpen ? "rotate-180" : ""
               } transition-transform`}
             >
               ▼
             </span>
-          </button>
+          </NavLink>
 
           {mobileServicesOpen && (
             <div className="ml-4 space-y-1">
