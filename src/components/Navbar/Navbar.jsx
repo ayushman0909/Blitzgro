@@ -57,6 +57,7 @@ export default function Navbar() {
               {/* Home Link */}
               <NavLink
                 to={"/home"}
+                
                 className={({ isActive }) =>
                   `inline-flex items-center gap-1 px-3 py-2 text-md font-medium  hover:text-black ${
                     isActive
@@ -131,6 +132,7 @@ export default function Navbar() {
               {/* About us */}
               <NavLink
                 to={"/about-us"}
+                onClick={() => window.scrollTo(0, 0)}
                 className={({ isActive }) =>
                   `inline-flex items-center gap-1 px-3 py-2 text-md font-medium hover:text-black ${
                     isActive
@@ -154,6 +156,8 @@ export default function Navbar() {
               >
                 <NavLink
                   to="/case-studies"
+                onClick={() => window.scrollTo(0, 0)}
+                  
                   className={({ isActive }) =>
                     `inline-flex items-center gap-1 px-0 py-2 text-md font-medium ${
                       isActive
@@ -208,6 +212,8 @@ export default function Navbar() {
               {/* Blogs Link */}
               <NavLink
                 to={"/blogs"}
+                onClick={() => window.scrollTo(0, 0)}
+
                 className={({ isActive }) =>
                   `inline-flex items-center gap-1 px-3 py-2 text-md font-medium  hover:text-black ${
                     isActive

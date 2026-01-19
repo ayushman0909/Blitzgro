@@ -8,6 +8,7 @@ import Casestudies from "./pages/Casestudies.jsx"
 import Blogs from "./pages/Blogs.jsx"
 import Contactus from "./pages/Contactus.jsx"
 import Footer from './components/Footer/Footer.jsx'
+import BlogDetail from './pages/BlogDetail.jsx'
 const App = () => {
   return (
     
@@ -21,6 +22,7 @@ const App = () => {
         <Route path='/about-us' element={<Aboutus/>}/>
         <Route path='/case-studies' element={<Casestudies/>}/>
         <Route path='/blogs' element={<Blogs/>}/>
+        <Route path="/blogs/:slug" element={<BlogDetail/>} />
         <Route path='/contact-us' element={<Contactus/>}/>
        </Routes>
        </div>
