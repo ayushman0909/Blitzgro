@@ -18,6 +18,7 @@ const Home = () => {
 
 const heroSectionData={
   heading1:"Driving Sustainable Growth",
+  
   heading2:"for Food & Hospitality Businesses",
   subheading:"Strategic consulting for hospitality and food businesses — from market entry and demand generation to operations, supply chain, and sustainable growth.",
   cta1:{

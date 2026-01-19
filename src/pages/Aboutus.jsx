@@ -19,6 +19,7 @@ const Aboutus = () => {
 
   const heroSectionData = {
     heading1: "Your Growth Partner ",
+  
     heading2: "for the Food & Hospitality Industry",
     subheading:
       " At BlitzGro, we work exclusively with food and hospitality businesses to help them grow smarter, stronger, and sustainably We don’t believe in generic consulting. Every strategy we build is tailored, data-driven, and designed for long-term impact. ",

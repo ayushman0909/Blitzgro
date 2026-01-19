@@ -59,10 +59,10 @@ export default function Navbar() {
                 to={"/home"}
                 
                 className={({ isActive }) =>
-                  `inline-flex items-center gap-1 px-3 py-2 text-md font-medium  hover:text-black ${
+                  `inline-flex items-center gap-1 px-3 py-2 text-md  dark:text-gray-300 dark:hover:text-gray-50 font-medium  hover:text-black ${
                     isActive
                       ? "text-black border-b-2 border-green-800"
-                      : "text-gray-500 dark:text-gray-400 dark:hover:text-gray-300"
+                      : "text-gray-500"
                   }`
                 }
               >
@@ -78,8 +78,9 @@ export default function Navbar() {
               >
                 <NavLink
                   to="/services"
+                  onClick={()=>window.scroll(0,0)}
                   className={({ isActive }) =>
-                    `inline-flex items-center gap-1 px-0 py-2 text-md font-medium ${
+                    `inline-flex items-center gap-1   dark:text-gray-300 dark:hover:text-gray-50  px-0 py-2 text-md font-medium ${
                       isActive
                         ? "text-black border-b-2 border-green-800"
                         : "text-gray-500 hover:text-black"
@@ -90,7 +91,7 @@ export default function Navbar() {
                 </NavLink>
 
                 <svg
-                  className={`w-4 h-4 ml-1 transition-transform duration-300 ${
+                  className={`w-4 h-4 ml-1 dark:text-gray-50 transition-transform duration-300 ${
                     isServicesOpen ? "rotate-180" : ""
                   }`}
                   fill="none"
@@ -134,10 +135,10 @@ export default function Navbar() {
                 to={"/about-us"}
                 onClick={() => window.scrollTo(0, 0)}
                 className={({ isActive }) =>
-                  `inline-flex items-center gap-1 px-3 py-2 text-md font-medium hover:text-black ${
+                  `inline-flex items-center gap-1 px-3 py-2  dark:text-gray-300 dark:hover:text-gray-50  text-md font-medium hover:text-black ${
                     isActive
                       ? "text-black border-b-2 border-green-800"
-                      : "text-gray-500 dark:text-gray-400 dark:hover:text-gray-300"
+                      : "text-gray-500"
                   }`
                 }
               >
@@ -161,8 +162,8 @@ export default function Navbar() {
                   className={({ isActive }) =>
                     `inline-flex items-center gap-1 px-0 py-2 text-md font-medium ${
                       isActive
-                        ? "text-black border-b-2 border-green-800"
-                        : "text-gray-500 hover:text-black"
+                        ? "text-black dark:text-gray-50 border-b-2 border-green-800"
+                        : "text-gray-500 dark:text-gray-300 dark:hover:text-gray-50 "
                     }`
                   }
                 >
@@ -170,7 +171,7 @@ export default function Navbar() {
                 </NavLink>
 
                 <svg
-                  className={`w-4 h-4 ml-1 transition-transform duration-300 ${
+                  className={`w-4 h-4 ml-1 dark:text-gray-50 transition-transform duration-300 ${
                     isCaseOpen ? "rotate-180" : ""
                   }`}
                   fill="none"
@@ -200,7 +201,7 @@ export default function Navbar() {
                       <NavLink
                         key={item.name}
                         to={item.to}
-                        className="block px-4 py-2 text-sm rounded-lg hover:bg-gray-200"
+                        className="block px-4 py-2 text-sm  rounded-lg hover:bg-gray-200"
                       >
                         {item.name}
                       </NavLink>
@@ -215,10 +216,10 @@ export default function Navbar() {
                 onClick={() => window.scrollTo(0, 0)}
 
                 className={({ isActive }) =>
-                  `inline-flex items-center gap-1 px-3 py-2 text-md font-medium  hover:text-black ${
+                  `inline-flex items-center gap-1 px-3 py-2 text-md  dark:text-gray-300 dark:hover:text-gray-50  font-medium  hover:text-black ${
                     isActive
-                      ? "text-black border-b-2 border-green-800"
-                      : "text-gray-500  dark:text-gray-400 dark:hover:text-gray-300"
+                      ? "text-black dark:text-gray-50 border-b-2 border-green-800"
+                      : "text-gray-500 "
                   }`
                 }
               >
@@ -232,8 +233,8 @@ export default function Navbar() {
                 transition-all duration-400 ease-in-out
                    ${
                      isActive
-                       ? "bg-black text-white"
-                       : "bg-yellow-400 text-black hover:bg-black hover:text-white"
+                       ? "bg-black dark:text-black dark:bg-white text-white"
+                       : "bg-yellow-400  text-black hover:bg-black hover:text-white"
                    }`
                 }
               >

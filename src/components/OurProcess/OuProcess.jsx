@@ -2,7 +2,7 @@ export default function Features5() {
   const timeline = [
    
   {
-    year: "Step-1",
+    step: "Step-1",
     title: "Initial Consultation",
     description:
       "We understand your business goals, challenges, and expectations to align our approach with your vision from day one.",
@@ -14,7 +14,7 @@ export default function Features5() {
     color: "bg-blue-500",
   },
   {
-    year: "Step-2",
+    step: "Step-2",
     title: "Discovery & Research",
     description:
       "We conduct detailed research to understand your market, competitors, and internal processes.",
@@ -26,7 +26,7 @@ export default function Features5() {
     color: "bg-indigo-500",
   },
   {
-    year: "Step-3",
+    step: "Step-3",
     title: "Strategic Planning",
     description:
       "We design a customized growth strategy focused on scalability, efficiency, and measurable outcomes.",
@@ -38,7 +38,7 @@ export default function Features5() {
     color: "bg-purple-500",
   },
   {
-    year: "Step-4",
+    step: "Step-4",
     title: "Proposal & Alignment",
     description:
       "We present the proposed strategy, gather feedback, and finalize a clear execution plan.",
@@ -50,7 +50,7 @@ export default function Features5() {
     color: "bg-yellow-500",
   },
   {
-    year: "Step-5",
+    step: "Step-5",
     title: "Implementation",
     description:
       "Our team executes the strategy with hands-on support to ensure smooth and effective delivery.",
@@ -62,7 +62,7 @@ export default function Features5() {
     color: "bg-green-500",
   },
   {
-    year: "Step-6",
+    step: "Step-6",
     title: "Monitoring & Optimization",
     description:
       "We track performance, analyze results, and continuously optimize for better efficiency and ROI.",
@@ -74,7 +74,7 @@ export default function Features5() {
     color: "bg-teal-500",
   },
   {
-    year: "Step-7",
+    step: "Step-7",
     title: "Ongoing Support & Growth",
     description:
       "We provide ongoing consulting, reviews, and strategic guidance to support long-term growth.",
@@ -112,13 +112,13 @@ export default function Features5() {
               }`}
             >
               <div
-                className={`w-full border border-amber-200  rounded-2xl md:w-6/12  ${
+                className={`w-full   rounded-2xl md:w-6/12  ${
                   index % 2 === 0 ? "md:pr-8 text-right" : "md:pl-8 text-left"
                 }`}
               >
-                <div className="bg-white dark:bg-zinc-900 p-6   rounded-2xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-2 duration-300">
+                <div className="bg-white dark:bg-zinc-900 p-6 border  border-amber-200 rounded-2xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-2 duration-300">
                   <div className={`inline-block px-3 py-1 rounded-full text-white text-sm font-semibold mb-4 ${item.color}`}>
-                    {item.year}
+                    {item.step}
                   </div>
                   <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">
                     {item.title}

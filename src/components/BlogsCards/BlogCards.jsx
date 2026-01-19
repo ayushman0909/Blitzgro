@@ -1,20 +1,23 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-export default function BlogsCards({features}) {
+export default function BlogsCards({features,BlogHeadings}) {
   
  const [showCardsCount,setShowCardsCount]=useState(3);
 
   return (
     <section className="py-10 bg-linear-to-b from-gray-50 to-white dark:from-zinc-900 dark:to-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        {
+          BlogHeadings && <div className="text-center mb-16">
           <h2 className="text-2xl sm:text-2xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            Expert Insights on Scaling Food & Hospitality Businesses
+            {BlogHeadings.heading}
           </h2>
           <p className="text-lg sm:text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-           Actionable perspectives on strategy, operations, market entry, and sustainable growth — written by industry practitioners, not theorists.
+           {BlogHeadings.subheading}
           </p>
         </div>
+        }
+        
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.slice(0,showCardsCount).map((feature, index) => (
@@ -46,6 +49,7 @@ export default function BlogsCards({features}) {
                   {feature.description}
                 </p>
                 <Link
+                onClick={()=>window.scroll(0,0)}
                   to={`/blogs/${feature.slug}`}
                   className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-medium transition-colors"
                 >
