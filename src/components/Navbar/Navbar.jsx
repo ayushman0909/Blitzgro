@@ -57,7 +57,6 @@ export default function Navbar() {
               {/* Home Link */}
               <NavLink
                 to={"/home"}
-                
                 className={({ isActive }) =>
                   `inline-flex items-center gap-1 px-3 py-2 text-md  dark:text-gray-300 dark:hover:text-gray-50 font-medium  hover:text-black ${
                     isActive
@@ -78,7 +77,7 @@ export default function Navbar() {
               >
                 <NavLink
                   to="/services"
-                  onClick={()=>window.scroll(0,0)}
+                  onClick={() => window.scroll(0, 0)}
                   className={({ isActive }) =>
                     `inline-flex items-center gap-1   dark:text-gray-300 dark:hover:text-gray-50  px-0 py-2 text-md font-medium ${
                       isActive
@@ -119,6 +118,7 @@ export default function Navbar() {
                   <div className="mt-3 p-3 bg-white border border-gray-200 rounded-lg shadow-lg">
                     {servicesList.map((item) => (
                       <NavLink
+                        onClick={() => window.scrollTo(0, 0)}
                         key={item.name}
                         to={item.to}
                         className="block px-4 py-2 text-sm rounded-lg hover:bg-gray-200"
@@ -157,8 +157,7 @@ export default function Navbar() {
               >
                 <NavLink
                   to="/case-studies"
-                onClick={() => window.scrollTo(0, 0)}
-                  
+                  onClick={() => window.scrollTo(0, 0)}
                   className={({ isActive }) =>
                     `inline-flex items-center gap-1 px-0 py-2 text-md font-medium ${
                       isActive
@@ -214,7 +213,6 @@ export default function Navbar() {
               <NavLink
                 to={"/blogs"}
                 onClick={() => window.scrollTo(0, 0)}
-
                 className={({ isActive }) =>
                   `inline-flex items-center gap-1 px-3 py-2 text-md  dark:text-gray-300 dark:hover:text-gray-50  font-medium  hover:text-black ${
                     isActive
@@ -273,10 +271,10 @@ export default function Navbar() {
                   shadow-lg z-50
                   transform transition-all duration-300 ease-out
                   ${
-                     isMenuOpen
+                    isMenuOpen
                       ? "opacity-100 translate-y-0 visible"
                       : "opacity-0 -translate-y-4 invisible"
-                    }
+                  }
                      `}
       >
         <div className="px-4 py-4 space-y-2">
@@ -290,12 +288,20 @@ export default function Navbar() {
           </NavLink>
 
           {/* Services Dropdown */}
-          <NavLink to={"/services"}
-            
+          <NavLink
+            to={"/services"}
+            onClick={() => {
+              window.scrollTo(0, 0);
+              setIsMenuOpen(!isMenuOpen)
+            }}
             className="w-full flex justify-between items-center px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-100 rounded-lg"
           >
             Services
-            <span onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
+            <span
+              onClick={() => {
+                window.scrollTo(0, 0);
+                setMobileServicesOpen(!mobileServicesOpen);
+              }}
               className={`${
                 mobileServicesOpen ? "rotate-180" : ""
               } transition-transform`}

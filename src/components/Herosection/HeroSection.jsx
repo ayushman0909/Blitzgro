@@ -26,7 +26,7 @@ export default function HeroSection({ heroSectionData, stats }) {
   }, [images.length]);
 
   return (
-    <section className="relative w-full h-auto pb-10 min-h-96 mb-2 rounded-b-xl  overflow-hidden z-30 border shadow-2xl border-gray-300">
+    <section className="relative w-full h-auto pb-10 min-h-96 mb-2 rounded-b-xl  overflow-hidden z-30 border shadow-2xl ">
       {/* 🔥 Background Images */}
       <div className="absolute inset-0 bg-cover bg-center "  style={{ backgroundImage: `url(${images[0]})` }}>
         {images.map((img, index) => (

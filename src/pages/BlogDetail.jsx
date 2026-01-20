@@ -15,11 +15,14 @@ const BlogDetail = () => {
   }
   return (
     <section>
-     <div className=" h-screen bg-amber-900">
-      <img src={Blog.image} alt="" className="w-full h-full" />
+     <div className=" relative h-screen">
+      <img src={Blog.image} alt="" className="w-full h-full " />
+      <h2 className=" absolute backdrop-blur-xs h-full top-0 w-full flex items-center justify-center mb-10 bg-black/70  text-3xl  sm:text-3xl md:text-6xl font-bold text-gray-100 dark:text-white ">
+          {Blog.title}
+          </h2>
      </div>
          <div className=" mb-16 p-10">
-          <h2 className="text-2xl text-center sm:text-2xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+          <h2 className="  text-2xl text-center sm:text-2xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
           {Blog.title}
           </h2>
           <p className="text-lg sm:text-lg md:text-xl text-gray-600 dark:text-gray-400 p-2">

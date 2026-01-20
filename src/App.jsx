@@ -9,16 +9,18 @@ import Blogs from "./pages/Blogs.jsx"
 import Contactus from "./pages/Contactus.jsx"
 import Footer from './components/Footer/Footer.jsx'
 import BlogDetail from './pages/BlogDetail.jsx'
+import ServiceDetail from './pages/ServiceDetail.jsx'
 const App = () => {
   return (
     
     <div className=" w-full bg-white dark:bg-black ">
       <Navbar/>
-      <div className="px-1 border h-auto border-black ">
+      <div className="px-1  h-auto ">
        <Routes>
         <Route path="/home" element={<Home/>}/>
         <Route path='/' element={<Navigate to={"/home"} replace/>} />
         <Route path='/services' element={<Service/>}/>
+        <Route path='/services/:slug' element={<ServiceDetail/>}/>
         <Route path='/about-us' element={<Aboutus/>}/>
         <Route path='/case-studies' element={<Casestudies/>}/>
         <Route path='/blogs' element={<Blogs/>}/>
