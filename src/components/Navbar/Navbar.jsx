@@ -299,6 +299,7 @@ export default function Navbar() {
           </NavLink>
 
           {/* Services Dropdown */}
+          <div className="flex justify-between items-center">
           <NavLink
             to={"/services"}
             onClick={() => {
@@ -308,17 +309,19 @@ export default function Navbar() {
             className="w-full flex justify-between items-center px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-100 rounded-lg"
           >
             Services
-            <span
+            
+          </NavLink>
+          <span
               onClick={() => {
-                window.scrollTo(0, 0);
+                setMobileServicesOpen(!mobileServicesOpen);
               }}
-              className={`${
-                mobileServicesOpen ? "rotate-180" : ""
+              className={`pr-3 ${
+                mobileServicesOpen ? "p-3 rotate-180" : ""
               } transition-transform`}
             >
               ▼
             </span>
-          </NavLink>
+            </div>
 
           {mobileServicesOpen && (
             <div className="ml-4 space-y-1">
