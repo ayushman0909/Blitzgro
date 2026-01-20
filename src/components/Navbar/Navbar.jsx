@@ -311,7 +311,6 @@ export default function Navbar() {
             <span
               onClick={() => {
                 window.scrollTo(0, 0);
-                setMobileServicesOpen(!mobileServicesOpen);
               }}
               className={`${
                 mobileServicesOpen ? "rotate-180" : ""
