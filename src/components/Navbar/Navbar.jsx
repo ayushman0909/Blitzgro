@@ -48,15 +48,22 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center justify-between">
-            <div className="shrink-0 w-1/7 ">
-              <NavLink to={"/home"}>
-                <img src={Logo} alt="" />
+            <div className="shrink-0 w-1/4 sm:w-1/4 md:w-1/7  ">
+              <NavLink
+                to={"/home"}
+                onClick={() => {
+                  window.scrollTo(0, 0);
+                  setIsMenuOpen(false);
+                }}
+              >
+                <img src={Logo} alt="Logo" className="" />
               </NavLink>
             </div>
             <div className="hidden md:ml-6 md:flex md:space-x-8   justify-end gap-1 items-center ">
               {/* Home Link */}
               <NavLink
                 to={"/home"}
+                 onClick={()=>window.scroll(0,0)}
                 className={({ isActive }) =>
                   `inline-flex items-center gap-1 px-3 py-2 text-md  dark:text-gray-300 dark:hover:text-gray-50 font-medium  hover:text-black ${
                     isActive
@@ -281,8 +288,12 @@ export default function Navbar() {
           {/* Home */}
           <NavLink
             to="/home"
+            onClick={() => {
+                  window.scrollTo(0, 0);
+                  setIsMenuOpen(false);
+                }}
             className="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-100 rounded-lg"
-            onClick={() => setIsMenuOpen(false)}
+            
           >
             Home
           </NavLink>
@@ -292,7 +303,7 @@ export default function Navbar() {
             to={"/services"}
             onClick={() => {
               window.scrollTo(0, 0);
-              setIsMenuOpen(!isMenuOpen)
+              setIsMenuOpen(!isMenuOpen);
             }}
             className="w-full flex justify-between items-center px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-100 rounded-lg"
           >
