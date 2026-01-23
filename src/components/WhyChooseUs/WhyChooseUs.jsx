@@ -1,15 +1,17 @@
-export default function WhyChooseUs({ features, headings }) {
+export default function WhyChooseUs({ features, headings}) {
   return (
-    <section className="py-20 bg-white dark:bg-black overflow-hidden">
+    <section className="py-10 bg-white dark:bg-black overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {headings && (
+         
           <div className="text-center mb-16">
-            <h2 className="text-2xl sm:text-2xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+             {headings?.heading &&  <h2 className="text-2xl sm:text-2xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
               {headings.heading}
-            </h2>
-            <p className="text-lg sm:text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+            </h2>}
+            {headings?.subheading && <p className="text-lg sm:text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
               {headings.subheading}
-            </p>
+            </p>}
+            
           </div>
         )}
 
@@ -17,11 +19,11 @@ export default function WhyChooseUs({ features, headings }) {
           {features.map((feature, index) => (
             <div
               key={index}
-              className={`flex flex-col lg:flex-row items-center gap-12 ${
+              className={`flex flex-col lg:flex-row items-stretch  gap-12 ${
                 feature.reverse ? "lg:flex-row-reverse" : ""
               }`}
             >
-              <div className="flex-1 space-y-6">
+              <div className="flex-1 space-y-2 ">
                 <div>
                   {feature.subtitle && (
                     <span className="text-blue-600 dark:text-blue-400 text-sm font-semibold uppercase tracking-wider">
@@ -62,10 +64,10 @@ export default function WhyChooseUs({ features, headings }) {
                     ))}
                   </ul>
                 )}
-                {console.log(feature.button)}
+                
 
                 {feature.button && (
-                  <button className="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors duration-200">
+                  <button className="mt-4 inline-flex items-center  px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors duration-200">
                     {feature.button}
                     <svg
                       className="w-5 h-5 ml-2"
@@ -83,14 +85,13 @@ export default function WhyChooseUs({ features, headings }) {
                   </button>
                 )}
               </div>
-              <div className="flex-1">
-                <div className="relative rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300">
+              <div className="flex-1 flex  ">
+                <div className="relative h-full rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300">
                   <img
                     src={feature.image}
                     alt={feature.title}
-                    width={600}
-                    height={400}
-                    className="w-full h-auto"
+                     
+                    className="w-full object-cover h-full"
                   />
                 </div>
               </div>

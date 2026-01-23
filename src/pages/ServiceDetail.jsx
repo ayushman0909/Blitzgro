@@ -12,12 +12,7 @@ const ServiceDetail = () => {
       </div>
     );
   }
-
-  
    
-    
-  
-    
   return (
     <section>
         <div className=" relative h-[80vh]">

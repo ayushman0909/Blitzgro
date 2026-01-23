@@ -91,7 +91,9 @@ const stats = [
   ];
 
   // Who we Serve
-
+ const CardCount={
+  large:"grid-cols-4"
+ }
   const WhoWeServeHeadings={
     heading:"Who We Serve",
     subheading:"EMPOWERING DIVERSE SECTORS"
@@ -125,7 +127,7 @@ const stats = [
     <div>
       <HeroSection heroSectionData={heroSectionData} stats={stats}/>
       <PureRoutes/>
-       <WhoWeServe features={WhoWeServefeatures} headings={WhoWeServeHeadings}/>
+       <WhoWeServe features={WhoWeServefeatures} headings={WhoWeServeHeadings} CardCount={CardCount}/>
        <WhyChooseUs features={WhyChooseUsFeatures} headings={WhyChooseUsHeadings}/>
        <OurProcess/>
        <OurClients/>

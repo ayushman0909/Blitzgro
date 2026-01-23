@@ -13,7 +13,7 @@ export default function WhoWeServe({features,headings}) {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 text-left   md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className={`grid grid-cols-1 text-left   md:grid-cols-2 lg: gap-8`}>
           {features.map((feature, index) => (
             <div
               key={index}

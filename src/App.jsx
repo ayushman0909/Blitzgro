@@ -10,6 +10,7 @@ import Contactus from "./pages/Contactus.jsx"
 import Footer from './components/Footer/Footer.jsx'
 import BlogDetail from './pages/BlogDetail.jsx'
 import ServiceDetail from './pages/ServiceDetail.jsx'
+import CaseStudyDetail from './pages/CaseStudyDetail.jsx'
 const App = () => {
   return (
     
@@ -23,6 +24,7 @@ const App = () => {
         <Route path='/services/:slug' element={<ServiceDetail/>}/>
         <Route path='/about-us' element={<Aboutus/>}/>
         <Route path='/case-studies' element={<Casestudies/>}/>
+        <Route path='/case-studies/:slug' element={<CaseStudyDetail/>}/>
         <Route path='/blogs' element={<Blogs/>}/>
         <Route path="/blogs/:slug" element={<BlogDetail/>} />
         <Route path='/contact-us' element={<Contactus/>}/>
