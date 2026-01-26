@@ -7,7 +7,7 @@ const Blogs = () => {
   
   return (
     <div>
-      <BlogsCards features={BlogData} BlogHeadings={BlogHeadings} />
+      <BlogsCards features={BlogData} BlogHeadings={BlogHeadings} lg="grid-cols-3" page={"blogs"}/>
     </div>
   )
 }

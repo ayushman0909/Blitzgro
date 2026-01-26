@@ -101,22 +101,39 @@ const stats = [
    const WhoWeServefeatures = [
     {
       title: "New QSRs Startups",
-      description: "Short Format QSR, Long Format QSR, Kiosk Formats",
+      description: [
+        {heading:"",
+          detail:" Short Format QSR, Long Format QSR, Kiosk Formats"
+        }
+       ],
       icon: "⚡"
     },
     {
       title: "Expansion Of Existing Brands",
-      description: "Food Ventures Looking To Transforming Their Business Towards Scalability",
+      description: [{
+        heading:"",
+        detail:"Food Ventures Looking To Transforming Their Business Towards Scalability"
+      }]
+      ,
       icon: "🔒"
     },
     {
       title: "International Brands",
-      description: "SSteering Global Food Brands Into The Dynamic Indian Market",
+      description:[{
+        heading:"",
+        detail:"SSteering Global Food Brands Into The Dynamic Indian Market"
+      }]
+       ,
       icon: "☁️"
     },
     {
       title: "Cafes, Diners And Bars",
-      description: "Experience Driven Coffee Shops, Diners, And Trendy Bars.",
+
+      description: [{
+        heading:"",
+        detail:"Experience Driven Coffee Shops, Diners, And Trendy Bars."
+      }]
+      ,
       icon: "📊"
     }
     
@@ -127,7 +144,7 @@ const stats = [
     <div>
       <HeroSection heroSectionData={heroSectionData} stats={stats}/>
       <PureRoutes/>
-       <WhoWeServe features={WhoWeServefeatures} headings={WhoWeServeHeadings} CardCount={CardCount}/>
+       <WhoWeServe features={WhoWeServefeatures} headings={WhoWeServeHeadings} CardCount={CardCount} lgScreen='grid-cols-4'/>
        <WhyChooseUs features={WhyChooseUsFeatures} headings={WhyChooseUsHeadings}/>
        <OurProcess/>
        <OurClients/>

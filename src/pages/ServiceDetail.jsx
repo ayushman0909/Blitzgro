@@ -15,7 +15,7 @@ const ServiceDetail = () => {
    
   return (
     <section>
-        <div className=" relative h-[80vh]">
+        <div className=" relative  h-[60vh] sm:h-[60vh] md:h-[80vh]">
       <img src={Service.bannerimage} alt={Service.heading} className="w-full h-full " />
       <h2 className=" absolute backdrop-blur-xs h-full top-0 w-full flex items-center text-center justify-center mb-10 bg-black/70  text-3xl   sm:text-3xl md:text-5xl font-bold text-gray-100 dark:text-white  p-3">
           {Service.heading}

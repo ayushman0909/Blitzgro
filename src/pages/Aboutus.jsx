@@ -80,26 +80,46 @@ const Aboutus = () => {
   const WhatDoWeBelieveInfeatures = [
     {
       title: "Authenticity",
-      description:
-        "We believe in honest partnerships built on transparency, integrity, and clear communication at every stage of the journey.",
+      description:[
+        {
+          heading:"",
+          detail:"We believe in honest partnerships built on transparency, integrity, and clear communication at every stage of the journey."
+        }
+      ]
+        ,
       icon: "⚡",
     },
     {
       title: "Scalability",
-      description:
-        "We design strategies that drive sustainable growth and long-term profitability through thoughtful, data-driven expansion.",
+      description:[
+        {
+          heading:"",
+          detail:"We design strategies that drive sustainable growth and long-term profitability through thoughtful, data-driven expansion."
+        }
+      ]
+        ,
       icon: "🔒",
     },
     {
       title: "Empathy",
-      description:
-        "We take the time to understand our clients, their challenges, and their goals—building meaningful relationships that lead to better outcomes",
+      description:[
+        {
+          heading:"",
+          detail:"We take the time to understand our clients, their challenges, and their goals—building meaningful relationships that lead to better outcomes"
+        }
+      ]
+        ,
       icon: "☁️",
     },
     {
       title: "Responsibility",
-      description:
-        "We hold ourselves accountable for delivering dependable excellence, acting responsibly toward our clients, partners, and the communities we serve.",
+      description:[
+        {
+          heading:"",
+          detail:"We hold ourselves accountable for delivering dependable excellence, acting responsibly toward our clients, partners, and the communities we serve."
+        }
+      ]
+      ,
       icon: "📊",
     },
   ];

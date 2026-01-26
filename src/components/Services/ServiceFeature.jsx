@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const ServiceFeature = ({ heroSectionData }) => {
   const { heading, subheading, cta, bannerimage } = heroSectionData;
   return (
-    <section className="relative w-full h-[85vh]  mb-2 rounded-b-xl  overflow-hidden z-30 border shadow-2xl border-gray-300">
+    <section className="relative w-full  h-[60vh] sm:h-[60vh] md:h-[80vh]  mb-2 rounded-b-xl  overflow-hidden z-30 border shadow-2xl border-gray-300">
       {/* 🔥 Background Images */}
       <div className="absolute  inset-0">
         <img
@@ -20,7 +20,7 @@ const ServiceFeature = ({ heroSectionData }) => {
       {/* 🔥 Content */}
       <div className="relative bg-black/80 flex flex-col h-full  items-center justify-center z-40 text-center w-full p-3 sm:p-5">
         <h1
-          className={`text-4xl sm:text-4xl md:text-5xl 
+          className={`text-3xl sm:text-3xl md:text-5xl 
           font-bold bg-linear-to-r from-white to-gray-400
           bg-clip-text text-transparent dark:from-white dark:to-gray-200
           mb-6 tracking-tight leading-tight`}
@@ -29,7 +29,7 @@ const ServiceFeature = ({ heroSectionData }) => {
         </h1>
 
         <p
-          className="text-center sm:text-lg md:text-xl lg:text-2xl
+          className="text-center sm:text-sm md:text-lg lg:text-xl
           text-gray-200 dark:text-gray-200 mb-10
           leading-relaxed font-medium max-w-4xl "
         >

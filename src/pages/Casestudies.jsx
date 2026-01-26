@@ -1,9 +1,11 @@
+import BlogsCards from "../components/BlogsCards/BlogCards"
+import {CaseStudyData,CaseStudyHeadings} from "../../Data/CaseStudyData"
 
 
 const Casestudies = () => {
   return (
     <div>
-     case study
+     <BlogsCards BlogHeadings={CaseStudyHeadings} features={CaseStudyData} countappearonce={2} page={"case-studies"}/>
     </div>
   )
 }

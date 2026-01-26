@@ -1,4 +1,4 @@
-export default function WhoWeServe({features,headings}) {
+export default function WhoWeServe({features,headings,lgScreen="grid-col-2"}) {
  
 
   return (
@@ -13,7 +13,7 @@ export default function WhoWeServe({features,headings}) {
           </p>
         </div>
 
-        <div className={`grid grid-cols-1 text-left   md:grid-cols-2 lg: gap-8`}>
+        <div className={`grid grid-cols-1 text-left   md:grid-cols-2 lg:${lgScreen} gap-8`}>
           {features.map((feature, index) => (
             <div
               key={index}
@@ -23,9 +23,18 @@ export default function WhoWeServe({features,headings}) {
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
                 {feature.title}
               </h3>
-              <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+
+              
+              {feature.description?.map((each,index)=>{
+                return(
+                  <ul key={index}>
+                    <li className="text-gray-900 dark:text-gray-100 font-bold">{each.heading}<span className="text-gray-700 dark:text-gray-100 font-bold">{each.detail}</span></li>
+                  </ul>
+                )
+              })}
+              {/* <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
                 {feature.description}
-              </p>
+              </p> */}
             </div>
           ))}
         </div>

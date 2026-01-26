@@ -15,7 +15,7 @@ const BlogDetail = () => {
   }
   return (
     <section>
-     <div className=" relative h-screen">
+     <div className=" relative  h-[60vh] sm:h-[60vh] md:h-[80vh]">
       <img src={Blog.image} alt="" className="w-full h-full " />
       <h2 className=" absolute backdrop-blur-xs h-full top-0 w-full flex items-center justify-center mb-10 bg-black/70  text-3xl  sm:text-3xl md:text-6xl font-bold text-gray-100 dark:text-white ">
           {Blog.title}

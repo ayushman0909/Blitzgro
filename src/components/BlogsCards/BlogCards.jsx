@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-export default function BlogsCards({features,BlogHeadings}) {
+export default function BlogsCards({features,BlogHeadings,lg="grid-cols-2",countappearonce=3,page}) {
   
- const [showCardsCount,setShowCardsCount]=useState(3);
+ const [showCardsCount,setShowCardsCount]=useState(countappearonce);
 
   return (
     <section className="py-10 bg-linear-to-b from-gray-50 to-white dark:from-zinc-900 dark:to-black">
@@ -18,8 +18,7 @@ export default function BlogsCards({features,BlogHeadings}) {
         </div>
         }
         
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {features && <div className={`grid grid-cols-1 md:grid-cols-2 lg:${lg} gap-8`}>
           {features.slice(0,showCardsCount).map((feature, index) => (
             <div
               key={index}
@@ -50,7 +49,7 @@ export default function BlogsCards({features,BlogHeadings}) {
                 </p>
                 <Link
                 onClick={()=>window.scroll(0,0)}
-                  to={`/blogs/${feature.slug}`}
+                  to={`/${page}/${feature.slug}`}
                   className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-medium transition-colors"
                 >
                   Learn more
@@ -71,7 +70,8 @@ export default function BlogsCards({features,BlogHeadings}) {
               </div>
             </div>
           ))}
-        </div>
+        </div>}
+        
    { showCardsCount  <features.length  &&   <div className="text-center mt-12">
           <button className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200" onClick={()=>{setShowCardsCount(prev=>prev+3)}}>
             Show more
