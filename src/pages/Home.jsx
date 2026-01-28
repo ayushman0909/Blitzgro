@@ -12,6 +12,7 @@ import PureRoutes from '../components/PureRoutes/PureRoutes';
 import RevenueFocusedBusinessScaling from "../assets/Home/Why/RevenueFocusedBusinessScaling.jpg"
 import DataDrivenMarketingThatConverts from "../assets/Home/Why/DataDrivenMarketingThatConverts.jpg"
 import SmarterSystemsBetterMargins from "../assets/Home/Why/SmarterSystemsBetterMargins.jpg"
+import PageWrapper from "../components/PageWrapper";
 
 const Home = () => {
 // HomeSection Data
@@ -141,14 +142,14 @@ const stats = [
 
 
   return (
-    <div>
+    <PageWrapper>
       <HeroSection heroSectionData={heroSectionData} stats={stats}/>
       <PureRoutes/>
        <WhoWeServe features={WhoWeServefeatures} headings={WhoWeServeHeadings} CardCount={CardCount} lgScreen='grid-cols-4'/>
        <WhyChooseUs features={WhyChooseUsFeatures} headings={WhyChooseUsHeadings}/>
        <OurProcess/>
        <OurClients/>
-    </div>
+    </PageWrapper>
   )
 }
 

@@ -23,7 +23,7 @@ export default function WhyChooseUs({ features, headings}) {
                 feature.reverse ? "lg:flex-row-reverse" : ""
               }`}
             >
-              <div className="flex-1 space-y-2 ">
+              <div className="flex-1 flex flex-col justify-center space-y-2 ">
                 <div>
                   {feature.subtitle && (
                     <span className="text-blue-600 dark:text-blue-400 text-sm font-semibold uppercase tracking-wider">

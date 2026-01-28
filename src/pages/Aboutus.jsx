@@ -13,6 +13,8 @@ import ChetanSir from "../assets/Aboutus/chetanSir.jpg";
 import ShaktiSir from "../assets/Aboutus/shaktiSir.jpg";
 import PuspendraSir from "../assets/Aboutus/Puspendrasir.png";
 import FounderMessage from "../components/FoundersMessage/FounderMessage";
+import PageWrapper from "../components/PageWrapper";
+
 
 const Aboutus = () => {
   // HeroSection Data
@@ -150,7 +152,7 @@ const Aboutus = () => {
   ];
 
   return (
-    <div>
+    <PageWrapper>
       <HeroSection heroSectionData={heroSectionData} />
       <WhyChooseUs features={AboutFeatures} />
       <WhoWeServe
@@ -159,7 +161,7 @@ const Aboutus = () => {
       />
       <FounderCards profiles={FoundersDetails} />
       <FounderMessage/>
-    </div>
+    </PageWrapper>
   );
 };
 

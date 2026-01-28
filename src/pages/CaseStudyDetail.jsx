@@ -2,12 +2,14 @@ import { CaseStudyData } from "../../Data/CaseStudyData";
 import { useParams } from "react-router-dom";
 import CaseStudyDetailFeatures from "../components/CaseStudyDetailFeatures/CaseStudyDetailFeatures";
 import WhoWeServe from "../components/WhoWeServe/WhoWeServe";
+import PageWrapper from "../components/PageWrapper";
+
 const CaseStudyDetail = () => {
   const { slug } = useParams();
   const CaseStudy = CaseStudyData.find((item) => item.slug === slug);
 
   return (
-    <section>
+    <PageWrapper>
       <div className=" relative h-[60vh] sm:h-[60vh] md:h-[80vh] ">
         <img src={CaseStudy.image} alt="" className="w-full h-full " />
         <h2 className=" absolute backdrop-blur-xs h-full top-0 w-full flex items-center justify-center mb-10 bg-black/70  text-3xl  sm:text-3xl md:text-6xl font-bold text-gray-100 dark:text-white ">
@@ -26,7 +28,7 @@ const CaseStudyDetail = () => {
      <WhoWeServe headings={CaseStudy.data.whatWeServeHeadings} features={CaseStudy.data.whatWeServeFeatures} />
      <CaseStudyDetailFeatures features={CaseStudy.data.result}/>
 
-    </section>
+    </PageWrapper>
   );
 };
 

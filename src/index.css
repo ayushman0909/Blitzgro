@@ -1,4 +1,16 @@
 @import "tailwindcss";
+/* index.css */
+@import "nprogress/nprogress.css";
+/* Custom YouTube-style color for NProgress */
+#nprogress .bar {
+  background: #22c55e !important; /* Use your brand green */
+  height: 3px !important;
+}
+
+/* Optional: Add a subtle glow */
+#nprogress .peg {
+  box-shadow: 0 0 10px #22c55e, 0 0 5px #22c55e !important;
+}
 
 /* 🔥 Global text reset */
 @layer base {

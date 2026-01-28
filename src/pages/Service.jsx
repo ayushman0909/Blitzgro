@@ -1,14 +1,17 @@
 import ServiceFeature from '../components/Services/ServiceFeature';
 import herosection from "../../Data/ServiceData"
+import PageWrapper from "../components/PageWrapper";
+
+
 const Service=()=>{
   return (
-    <div>
+    <PageWrapper>
 
       {herosection.map((heroSectionData,index)=>(
       // <HeroSection  /> 
       <ServiceFeature key={index} heroSectionData={heroSectionData}/>
       ))}
-    </div>
+    </PageWrapper>
   )
 }
 

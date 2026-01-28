@@ -1,6 +1,8 @@
 import ServiceData from "../../Data/ServiceData"
 import { useParams } from "react-router-dom"
 import WhyChooseUs from "../components/WhyChooseUs/WhyChooseUs";
+import PageWrapper from "../components/PageWrapper";
+
 const ServiceDetail = () => {
   const {slug}=useParams();
  
@@ -14,7 +16,7 @@ const ServiceDetail = () => {
   }
    
   return (
-    <section>
+    <PageWrapper>
         <div className=" relative  h-[60vh] sm:h-[60vh] md:h-[80vh]">
       <img src={Service.bannerimage} alt={Service.heading} className="w-full h-full " />
       <h2 className=" absolute backdrop-blur-xs h-full top-0 w-full flex items-center text-center justify-center mb-10 bg-black/70  text-3xl   sm:text-3xl md:text-5xl font-bold text-gray-100 dark:text-white  p-3">
@@ -22,7 +24,7 @@ const ServiceDetail = () => {
           </h2>
      </div>
      <WhyChooseUs features={Service.data.detail} headings={Service.data.heading}/>
-    </section>
+    </PageWrapper>
   )
 }
 
