@@ -74,15 +74,15 @@ export default function ContactUs() {
 
   return (
     <PageWrapper>
-    <section className="relative overflow-hidden bg-linear-to-br from-gray-50 via-white to-gray-100 py-28">
+    <section className="relative overflow-hidden  dark:bg-black py-28 ">
       {/* Decorative blur */}
-      <div className="absolute -top-32 -left-32 w-96 h-96 bg-green-300/30 rounded-full blur-3xl" />
+      <div className="absolute -top-32 -left-32 w-96 h-96 bg-green-300/30 rounded-full blur-3xl " />
       <div className="absolute top-1/2 -right-32 w-96 h-96 bg-yellow-300/30 rounded-full blur-3xl" />
 
       <div className="relative max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-20">
         {/* LEFT CONTENT */}
         <div className="space-y-7">
-          <span className="inline-block text-black text-2xl font-extrabold uppercase tracking-[0.25em]">
+          <span className="inline-block text-black dark:text-white text-2xl font-extrabold uppercase tracking-[0.25em]">
             Contact Us
           </span>
 
@@ -90,12 +90,12 @@ export default function ContactUs() {
             Let’s build something impactful together
           </h2>
 
-          <p className="text-lg text-gray-600 max-w-xl">
+          <p className="text-lg text-gray-600 dark:text-gray-200 max-w-xl">
             Share your business goals and our experts will guide you with a
             free, no-obligation consultation.
           </p>
 
-          <ul className="space-y-3 text-gray-700 text-sm">
+          <ul className="space-y-3 text-gray-700  dark:text-gray-200 text-sm">
             <li className="flex items-center gap-2">✅ Response within 24 hours</li>
             <li className="flex items-center gap-2">✅ Free expert consultation</li>
             <li className="flex items-center gap-2">✅ Your data stays confidential</li>
