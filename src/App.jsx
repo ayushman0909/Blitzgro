@@ -11,6 +11,8 @@ import Footer from './components/Footer/Footer.jsx'
 import BlogDetail from './pages/BlogDetail.jsx'
 import ServiceDetail from './pages/ServiceDetail.jsx'
 import CaseStudyDetail from './pages/CaseStudyDetail.jsx'
+import NotFound from "./pages/NotFound";
+
 
 // Import your loader functions
 import { startLoading, stopLoading } from './Utils/PageLoader.js' 
@@ -46,6 +48,7 @@ const App = () => {
           <Route path='/blogs' element={<Blogs />} />
           <Route path="/blogs/:slug" element={<BlogDetail />} />
           <Route path='/contact-us' element={<Contactus />} />
+           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
       <Footer />

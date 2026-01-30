@@ -64,6 +64,7 @@ const ServiceFeature = ({ heroSectionData, onLoad }) => {
             <div className="pt-4">
               {cta && (
                 <Link
+                onClick={()=>window.scroll(0,0)}
                   to={cta.path}
                   className="group relative inline-flex items-center justify-center px-8 py-4 font-bold text-white transition-all duration-200 bg-green-600 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 hover:bg-green-700"
                 >

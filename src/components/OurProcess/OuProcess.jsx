@@ -1,4 +1,8 @@
+import { useNavigate } from "react-router-dom";
+
 export default function Features5() {
+  const navigate = useNavigate();
+
   const timeline = [
    
   {
@@ -152,7 +156,7 @@ export default function Features5() {
           <p className="text-lg text-gray-600 dark:text-gray-400 mb-6">
             And this is just the beginning...
           </p>
-          <button className="px-8 py-3 bg-linear-to-r text-white bg- from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700  font-semibold rounded-lg shadow-lg transform hover:scale-105 transition-all duration-200">
+          <button  onClick={() => {navigate("/contact-us"); window.scrollTo(0,0)}} className="px-8 py-3 bg-linear-to-r text-white bg- from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700  font-semibold rounded-lg shadow-lg transform hover:scale-105 transition-all duration-200">
             Join Our Journey
           </button>
         </div>
