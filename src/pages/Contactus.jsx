@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import PageWrapper from "../components/PageWrapper";
 
 export default function ContactUs() {
@@ -14,6 +14,12 @@ export default function ContactUs() {
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
   const [shake, setShake] = useState(false);
+
+  useEffect(()=>{
+       setTimeout(() => {
+          setSuccess(false)
+       }, 3000);
+  },[success])
 
   const validate = () => {
     let newErrors = {};
