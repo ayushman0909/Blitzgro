@@ -59,7 +59,7 @@ const stats = [
         "Profit-driven decision making",
       ],
       image: RevenueFocusedBusinessScaling,
-       button:"Learn More"
+      //  button:"Learn More"
     },
    {
   title: "Data-Driven Marketing That Converts",
@@ -72,7 +72,7 @@ const stats = [
     "ROI & performance tracking",
   ],
   image:DataDrivenMarketingThatConverts,
-   button:"Learn More",
+  //  button:"Learn More",
   reverse: true,
 }
 ,
@@ -87,7 +87,7 @@ const stats = [
     "Operational performance audits",
   ],
   image:SmarterSystemsBetterMargins,
-   button:"Learn More"
+  //  button:"Learn More"
 }
   ];
 
