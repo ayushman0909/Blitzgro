@@ -3,7 +3,7 @@ export default function FounderCards({profiles}) {
   
   return (
     <div className="p-8 bg-white dark:bg-black">
-      <h3 className="text-2xl sm:text-2xl md:text-4xl font-bold text-center   text-gray-900 dark:text-white mb-10">OUR FOUNDERS</h3>
+      <h3 className="text-2xl sm:text-2xl md:text-4xl font-bold text-center   text-gray-900 dark:text-white mb-10">Our Team</h3>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
         {profiles.map((profile, index) => (

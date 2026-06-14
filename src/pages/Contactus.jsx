@@ -130,7 +130,7 @@ export default function ContactUs() {
               value={formData.name}
               error={errors.name}
               onChange={handleChange}
-              placeholder="John Doe"
+              placeholder="Enter Your Name"
             />
 
             <Field

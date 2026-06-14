@@ -11,29 +11,18 @@ export default function Navbar() {
 
   const servicesList = [
     {
-      name: "Horeca Market Penetration & Demand Generation",
+      name: "Extended sales",
       to: "/services/Horeca-Market-Penetration-Demand-Generation",
     },
     {
-      name: "Horeca Procurement & Vendor Management",
+      name: "Procurement & Vendor Management",
       to: "/services/Horeca-Procurement-Vendor-Management",
     },
     {
-      name: "Product & Segment Optimization",
+      name: "Marketting and Operations consulting",
       to: "/services/Product-Segment-Optimization",
     },
-    {
-      name: "Operations & Supply Chain Excellence",
-      to: "/services/Operations-Supply-Chain-Excellence",
-    },
-    {
-      name: "Manpower & Bussiness Growth Solutions",
-      to: "/services/Manpower-Bussiness-Growth-Solutions",
-    },
-    {
-      name: "Extended Sales & Portfolio Management",
-      to: "/services/Extended-Sales-Portfolio-Management",
-    },
+
   ];
 
   const caseStudiesList = [
@@ -154,7 +143,7 @@ export default function Navbar() {
 
               {/* Case study */}
 
-              <div
+              {/* <div
                 className="relative flex items-center"
                 onMouseEnter={() => {
                   setIsCaseOpen(true);
@@ -214,10 +203,10 @@ export default function Navbar() {
                     ))}
                   </div>
                 </div>
-              </div>
+              </div> */}
 
               {/* Blogs Link */}
-              <NavLink
+              {/* <NavLink
                 to={"/blogs"}
                 onClick={() => window.scrollTo(0, 0)}
                 className={({ isActive }) =>
@@ -229,7 +218,7 @@ export default function Navbar() {
                 }
               >
                 Blogs
-              </NavLink>
+              </NavLink> */}
               {/* Contact us */}
               <NavLink
                 to={"/contact-us"}

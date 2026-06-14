@@ -47,7 +47,7 @@ export default function BlogsCards({features,BlogHeadings,lg="grid-cols-2",count
                 <p className="text-gray-600 dark:text-gray-400 mb-4">
                   {feature.description}
                 </p>
-                <Link
+                {/* <Link
                 onClick={()=>window.scroll(0,0)}
                   to={`/${page}/${feature.slug}`}
                   className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-medium transition-colors"
@@ -66,7 +66,7 @@ export default function BlogsCards({features,BlogHeadings,lg="grid-cols-2",count
                       d="M9 5l7 7-7 7"
                     />
                   </svg>
-                </Link>
+                </Link> */}
               </div>
             </div>
           ))}

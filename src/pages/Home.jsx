@@ -13,6 +13,8 @@ import RevenueFocusedBusinessScaling from "../assets/Home/Why/RevenueFocusedBusi
 import DataDrivenMarketingThatConverts from "../assets/Home/Why/DataDrivenMarketingThatConverts.jpg"
 import SmarterSystemsBetterMargins from "../assets/Home/Why/SmarterSystemsBetterMargins.jpg"
 import PageWrapper from "../components/PageWrapper";
+import BlogsCards from '../components/BlogsCards/BlogCards';
+import WhyChooseUsData, { WhyChooseUsHeading } from '../../Data/WhyChooseUsData';
 
 const Home = () => {
 // HomeSection Data
@@ -144,11 +146,12 @@ const stats = [
   return (
     <PageWrapper>
       <HeroSection heroSectionData={heroSectionData} stats={stats}/>
+       <OurClients/>
       <PureRoutes/>
        <WhoWeServe features={WhoWeServefeatures} headings={WhoWeServeHeadings} CardCount={CardCount} lgScreen='grid-cols-4'/>
-       <WhyChooseUs features={WhyChooseUsFeatures} headings={WhyChooseUsHeadings}/>
+        <BlogsCards features={WhyChooseUsData} BlogHeadings={WhyChooseUsHeading} lg="grid-cols-3" page={"blogs"}/>
+       {/* <WhyChooseUs features={WhyChooseUsFeatures} headings={WhyChooseUsHeadings}/> */}
        <OurProcess/>
-       <OurClients/>
     </PageWrapper>
   )
 }

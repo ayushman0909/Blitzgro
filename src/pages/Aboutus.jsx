@@ -153,14 +153,14 @@ const Aboutus = () => {
 
   return (
     <PageWrapper>
-      <HeroSection heroSectionData={heroSectionData} />
+      {/* <HeroSection heroSectionData={heroSectionData} /> */}
       <WhyChooseUs features={AboutFeatures} />
       <WhoWeServe
         features={WhatDoWeBelieveInfeatures}
         headings={WhatDoWeBelieveInHeadings}
       />
       <FounderCards profiles={FoundersDetails} />
-      <FounderMessage/>
+      {/* <FounderMessage/> */}
     </PageWrapper>
   );
 };
