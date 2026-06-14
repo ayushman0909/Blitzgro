@@ -337,7 +337,7 @@ export default function Navbar() {
           </NavLink>
 
           {/* Case Studies Dropdown */}
-          <button
+          {/* <button
             onClick={() => setMobileCaseOpen(!mobileCaseOpen)}
             className="w-full flex justify-between items-center px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-100 rounded-lg"
           >
@@ -349,9 +349,9 @@ export default function Navbar() {
             >
               ▼
             </span>
-          </button>
+          </button> */}
 
-          {mobileCaseOpen && (
+          {/* {mobileCaseOpen && (
             <div className="ml-4 space-y-1">
               {caseStudiesList.map((item) => (
                 <NavLink
@@ -364,16 +364,16 @@ export default function Navbar() {
                 </NavLink>
               ))}
             </div>
-          )}
+          )} */}
 
           {/* Blogs */}
-          <NavLink
+          {/* <NavLink
             to="/blogs"
             className="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-100 rounded-lg"
             onClick={() => setIsMenuOpen(false)}
           >
             Blogs
-          </NavLink>
+          </NavLink> */}
 
           {/* Contact CTA */}
           <NavLink
