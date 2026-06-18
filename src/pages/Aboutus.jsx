@@ -148,7 +148,7 @@ const Aboutus = () => {
       social: { linkedin: "https://www.linkedin.com/in/pushpendra-tiwari-8095a627/"},
     },
     {
-      name: "Swami sir",
+      name: "Narayanswamy",
       role: "Business Development Manager",
       image: Swami,
       bio: "Business Development Manager at BlitzGro with 15 years of experience in hospitality and sales, specializing in B2B growth, account management, and client relationship building.",

@@ -11,6 +11,8 @@ import procurement from "../src/assets/Service/procurement.jpeg"
 import expandedSalesBussiness from "../src/assets/Service/expandedSalesBussiness.jpeg"
 import StretegicProcurement from "../src/assets/Service/StretegicProcurement.jpeg"
 import SupplierPerformance from "../src/assets/Service/SupplierPerformance.jpeg"
+import ProductPortfolioRationalization from "../src/assets/Service/ProductPortfolioRationalization.jpeg"
+import CustomerSegmentTargeting from "../src/assets/Service/CustomerSegmentTargeting.jpeg"
 const ServiceData = [
   {
     heading: "Extended Sales Services",
@@ -133,7 +135,7 @@ const ServiceData = [
         "LinkedIn marketing that builds brand credibility and connects you with the right decision-makers in your industry.",
         "End-to-end website handling that keeps your online presence sharp, updated, and business-ready at all times."
       ],
-       image: MarkettingandOperationsconsulting,
+       image: ProductPortfolioRationalization,
     },
     {
       title: "Customer & Segment Targeting",
@@ -145,7 +147,7 @@ const ServiceData = [
         "Product-Segment Fit: Right product for the right customer.",
         "Revenue Mix Optimization: Balance volume and margin growth."
       ],
-       image: MarkettingandOperationsconsulting,
+       image: CustomerSegmentTargeting,
     }
   ]
 }
