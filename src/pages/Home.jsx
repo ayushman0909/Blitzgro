@@ -1,9 +1,9 @@
 import React from 'react'
 import HeroSection from '../components/Herosection/HeroSection'
 import Countup from '../components/Counter/Countup'
-import Herosectionimage1 from "../assets/homeherosection.png"
-import Herosectionimage2 from "../assets/homeherosection2.png";
-import Herosectionimage3 from "../assets/homeherosection3.png";
+import Herosectionimage1 from "../assets/homeherosection.jpeg"
+import Herosectionimage2 from "../assets/homeherosection2.jpeg";
+import Herosectionimage3 from "../assets/homeherosection3.jpeg";
 import WhoWeServe from "../components/WhoWeServe/WhoWeServe";
 import WhyChooseUs from "../components/WhyChooseUs/WhyChooseUs";
 import OurProcess from "../components/OurProcess/OuProcess"
@@ -15,6 +15,10 @@ import SmarterSystemsBetterMargins from "../assets/Home/Why/SmarterSystemsBetter
 import PageWrapper from "../components/PageWrapper";
 import BlogsCards from '../components/BlogsCards/BlogCards';
 import WhyChooseUsData, { WhyChooseUsHeading } from '../../Data/WhyChooseUsData';
+import { HiMiniArrowTrendingUp } from "react-icons/hi2";
+import { FaRocket } from "react-icons/fa6";
+import { FcGlobe } from "react-icons/fc";
+import { GiCoffeeCup } from "react-icons/gi";
 
 const Home = () => {
 // HomeSection Data
@@ -109,7 +113,7 @@ const stats = [
           detail:" Short Format QSR, Long Format QSR, Kiosk Formats"
         }
        ],
-      icon: "⚡"
+      icon: <FaRocket/>
     },
     {
       title: "Expansion Of Existing Brands",
@@ -118,16 +122,16 @@ const stats = [
         detail:"Food Ventures Looking To Transforming Their Business Towards Scalability"
       }]
       ,
-      icon: "🔒"
+      icon: <HiMiniArrowTrendingUp/>
     },
     {
       title: "International Brands",
       description:[{
         heading:"",
-        detail:"SSteering Global Food Brands Into The Dynamic Indian Market"
+        detail:"Steering Global Food Brands Into The Dynamic Indian Market"
       }]
        ,
-      icon: "☁️"
+      icon: <FcGlobe/>
     },
     {
       title: "Cafes, Diners And Bars",
@@ -137,7 +141,7 @@ const stats = [
         detail:"Experience Driven Coffee Shops, Diners, And Trendy Bars."
       }]
       ,
-      icon: "📊"
+      icon: <GiCoffeeCup/>
     }
     
   ];

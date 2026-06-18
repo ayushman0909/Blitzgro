@@ -4,18 +4,22 @@
 // import OperationsSupplyChainExcellence from "../src/assets/Service/OperationsSupplyChainExcellence.jpg"
 // import ManpowerBusinessGrowthSolutions from "../src/assets/Service/ManpowerBusinessGrowthSolutions.jpg"
 // import ExtendedSalesPortfolioManagement from "../src/assets/Service/ExtendedSalesPortfolioManagement.jpg"
+import expandedSalesAccelerated from "../src/assets/Service/expandedSalesAccelerated.jpeg"
 import MarkettingandOperationsconsulting from "../src/assets/Service/MarkettingandOperationsconsulting.jpeg"
 import ExtendedSales from "../src/assets/Service/ExtendedSales.jpeg"
 import procurement from "../src/assets/Service/procurement.jpeg"
+import expandedSalesBussiness from "../src/assets/Service/expandedSalesBussiness.jpeg"
+import StretegicProcurement from "../src/assets/Service/StretegicProcurement.jpeg"
+import SupplierPerformance from "../src/assets/Service/SupplierPerformance.jpeg"
 const ServiceData = [
   {
-    heading: "Extended sales",
-    slug:"Horeca-Market-Penetration-Demand-Generation",
+    heading: "Extended Sales Services",
+    slug:"Extended-Sales-Services",
     subheading:
       "We help food and hospitality businesses enter new markets, build strong channel presence, and generate consistent demand through data-driven go-to-market strategies.",
     cta: {
       title: "View More",
-      path: "/services/Horeca-Market-Penetration-Demand-Generation",
+      path: "/services/Extended-Sales-Services",
     },
     bannerimage: ExtendedSales,
    data: {
@@ -34,7 +38,7 @@ const ServiceData = [
         "Demand Generation Programs: Design trade schemes, sampling, and activation campaigns to create market pull.",
         "Distributor Enablement: Build and scale distributor networks with clear targets and execution frameworks."
       ],
-       image: ExtendedSales,
+       image: expandedSalesAccelerated,
     },
     {
       title: "Building Strong HoReCa Market Presence",
@@ -46,7 +50,7 @@ const ServiceData = [
         "Sales Team Enablement: Clear pitch frameworks and execution playbooks.",
         "Performance Tracking: Market-level KPIs to continuously optimize demand."
       ],
-       image: ExtendedSales,
+       image: expandedSalesBussiness,
     }
   ]
 }
@@ -84,7 +88,7 @@ const ServiceData = [
         "Cost Control Systems: Price audits, negotiations, and margin protection.",
         "Centralized Procurement Planning: Reduce leakages and buying inefficiencies."
       ],
-       image: procurement,
+       image: StretegicProcurement,
     },
     {
       title: "Supplier Performance & Compliance",
@@ -96,7 +100,7 @@ const ServiceData = [
         "Quality & Compliance Checks: SOP-based supplier monitoring.",
         "Risk Mitigation: Backup sourcing and dependency reduction strategies."
       ],
-       image: procurement,
+       image: SupplierPerformance,
     }
   ]
 }
@@ -105,12 +109,12 @@ const ServiceData = [
 
   {
     heading: "Marketing and Operations consulting",
-    slug:"Product-Segment-Optimization",
+    slug:"Marketing-and-Operations-consulting",
     subheading:
       "We refine product portfolios and target segments to improve profitability, eliminate underperforming SKUs, and maximize revenue across customer categories.",
     cta: {
       title: "View More",
-      path: "/services/Product-Segment-Optimization",
+      path: "/services/Marketing-and-Operations-consulting",
     },
     bannerimage: MarkettingandOperationsconsulting,
     data: {
@@ -123,11 +127,11 @@ const ServiceData = [
       title: "Product Portfolio Rationalization",
       subtitle: "SKU OPTIMIZATION",
       description:
-        "We analyze product performance to eliminate low-margin SKUs and focus on high-impact offerings.",
+        "Blitzgro optimizes your digital presence to drive growth, visibility, and meaningful business connections.",
       points: [
-        "SKU Profitability Analysis: Identify winners and underperformers.",
-        "Portfolio Streamlining: Reduce complexity and operational burden.",
-        "Pricing Strategy Alignment: Improve margins without losing volume."
+        "Targeted SEO strategies that improve your search rankings and attract the right organic traffic consistently.",
+        "LinkedIn marketing that builds brand credibility and connects you with the right decision-makers in your industry.",
+        "End-to-end website handling that keeps your online presence sharp, updated, and business-ready at all times."
       ],
        image: MarkettingandOperationsconsulting,
     },

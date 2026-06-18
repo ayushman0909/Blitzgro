@@ -11,16 +11,16 @@ export default function Navbar() {
 
   const servicesList = [
     {
-      name: "Extended sales",
-      to: "/services/Horeca-Market-Penetration-Demand-Generation",
+      name: "Extended Sales Services",
+      to: "/services/Extended-Sales-Services",
     },
     {
       name: "Procurement & Vendor Management",
       to: "/services/Horeca-Procurement-Vendor-Management",
     },
     {
-      name: "Marketting and Operations consulting",
-      to: "/services/Product-Segment-Optimization",
+      name: "Marketing and Operations consulting",
+      to: "/services/Marketing-and-Operations-consulting",
     },
 
   ];

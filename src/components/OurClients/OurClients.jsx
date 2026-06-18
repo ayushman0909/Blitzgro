@@ -10,7 +10,7 @@ const OurClients = () => {
   return (
     <section className=' py-10 px-5'>
        <h2 className="text-2xl sm:text-2xl md:text-4xl text-center font-bold text-gray-900 dark:text-white mb-4">
-          Our Happy Clients😊
+          Our Happy Clients
           </h2>
           <p className="text-lg sm:text-lg md:text-xl text-center text-gray-600 dark:text-gray-400 ">
            Trusted By Industry Leaders
