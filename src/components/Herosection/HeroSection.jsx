@@ -30,7 +30,7 @@ export default function HeroSection({ heroSectionData }) {
   }, [images.length]);
 
   return (
-    <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden">
+  <section className="relative w-full h-[70vh] sm:h-[75vh]  py-20 md:h-screen flex items-center justify-center overflow-hidden">
 
       {/* 🌿 Background Slider */}
       <div className="absolute inset-0">
@@ -55,22 +55,22 @@ export default function HeroSection({ heroSectionData }) {
       {/* 🌿 Content */}
       <div className="relative z-10 max-w-6xl px-6 text-center">
 
-        <h1 className="text-3xl sm:text-3xl md:text-6xl font-extrabold text-white leading-tight">
+       <h1 className="text-2xl sm:text-3xl md:text-6xl font-extrabold text-white leading-snug">
           {heading1}
-          <span className="text-2xl sm:text-2xl md:text-5xl block mt-3 bg-linear-to-r from-green-400 to-green-200 bg-clip-text text-transparent">
+          <span className="text-xl sm:text-2xl md:text-5xl block mt-2  bg-linear-to-r from-green-400 to-green-200 bg-clip-text text-transparent">
             {heading2}
           </span>
         </h1>
 
-        <p className="mt-6 text-lg md:text-xl text-gray-200 max-w-2xl mx-auto leading-relaxed">
+        <p className="mt-4 text-sm sm:text-base md:text-xl text-gray-200 max-w-md md:max-w-2xl mx-auto leading-relaxed px-2">
           {subheading}
         </p>
 
-        <div className="mt-10 flex flex-col sm:flex-row gap-5 justify-center">
+        <div className="mt-6 md:mt-10 flex flex-col sm:flex-row gap-3 md:gap-5 justify-center">
           {cta1 && (
             <Link
               to={cta1.path}
-              className="px-8 py-4 rounded-full bg-linear-to-r from-green-700 to-green-500 text-white font-semibold shadow-lg hover:scale-105 transition-all duration-300"
+              className="px-6 py-3 md:px-8 md:py-4 rounded-full bg-linear-to-r from-green-700 to-green-500 text-white font-semibold shadow-lg hover:scale-105 transition-all duration-300"
             >
               {cta1.title}
             </Link>
@@ -79,7 +79,7 @@ export default function HeroSection({ heroSectionData }) {
           {cta2 && (
             <Link
               to={cta2.path}
-              className="px-8 py-4 rounded-full border border-white/30 text-white font-semibold backdrop-blur-md hover:bg-white/10 transition-all duration-300"
+              className="px-6 py-3 md:px-8 md:py-4   rounded-full border border-white/30 text-white font-semibold backdrop-blur-md hover:bg-white/10 transition-all duration-300"
             >
               {cta2.title}
             </Link>
