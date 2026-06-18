@@ -103,7 +103,7 @@ const stats = [
  }
   const WhoWeServeHeadings={
     heading:"Who We Serve",
-    subheading:"EMPOWERING DIVERSE SECTORS"
+    subheading:"Empowering Diverse Sectors"
   }
    const WhoWeServefeatures = [
     {

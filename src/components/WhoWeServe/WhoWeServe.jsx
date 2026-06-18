@@ -4,7 +4,7 @@ export default function WhoWeServe({
   lgScreen = "grid-cols-4",
 }) {
   return (
-    <section className="relative overflow-hidden py-14 px-4 bg-linear-to-b from-white to-green-50/30 dark:from-black dark:to-zinc-900">
+    <section className="relative overflow-hidden py-10 px-4 bg-linear-to-b from-white to-green-50/30 dark:from-black dark:to-zinc-900">
       {/* Background Effects */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-0 left-0 w-96 h-96 bg-green-100 rounded-full blur-3xl opacity-30" />
@@ -18,13 +18,13 @@ export default function WhoWeServe({
             Our Expertise
           </span>
 
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-5">
+          <h2 className=" sm:text-2xl md:text-4xl font-bold text-gray-900 dark:text-white mb-5">
             {headings.heading}
           </h2>
 
-          <div className="w-24 h-1 bg-linear-to-r from-green-600 to-yellow-400 mx-auto rounded-full mb-6" />
+          
 
-          <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+          <p className="text-lg sm:text-lg md:text-xl  text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             {headings.subheading}
           </p>
         </div>
@@ -135,7 +135,7 @@ export default function WhoWeServe({
                         {each.heading}
                         <span
                           className={`
-                            font-bold ml-1
+                            font-semibold ml-1
                             ${
                               feature.Backgroundimage
                                 ? "text-gray-200"
