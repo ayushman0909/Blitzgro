@@ -153,7 +153,7 @@ const stats = [
        <OurClients/>
      
        <WhoWeServe features={WhoWeServefeatures} headings={WhoWeServeHeadings} CardCount={CardCount} lgScreen='grid-cols-4'/>
-        <BlogsCards features={WhyChooseUsData} BlogHeadings={WhyChooseUsHeading} lg="grid-cols-3" page={"blogs"}/>
+        <BlogsCards features={WhyChooseUsData} BlogHeadings={WhyChooseUsHeading}  cols={3} page={"blogs"}/>
        {/* <WhyChooseUs features={WhyChooseUsFeatures} headings={WhyChooseUsHeadings}/> */}
        <OurProcess/>
         <PureRoutes/>
