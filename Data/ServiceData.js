@@ -18,7 +18,7 @@ const ServiceData = [
     heading: "Extended Sales Services",
     slug:"Extended-Sales-Services",
     subheading:
-      "We help food and hospitality businesses enter new markets, build strong channel presence, and generate consistent demand through data-driven go-to-market strategies.",
+      "Extend your sales capabilities with a team that doesn't just advise but executes. BlitzGro acts as your extended sales arm, helping you enter new markets, win customers, manage key accounts, and accelerate revenue growth. ",
     cta: {
       title: "View More",
       path: "/services/Extended-Sales-Services",
@@ -67,7 +67,7 @@ const ServiceData = [
     heading: "Procurement & Vendor Management",
      slug:"Horeca-Procurement-Vendor-Management",
     subheading:
-      "Streamline procurement operations with structured vendor onboarding, cost control frameworks, and supplier performance management tailored for HoReCa businesses.",
+      "Strengthen your procurement function through strategic sourcing, supplier development, and cost optimization that improves efficiency, resilience, and profitability. ",
     cta: {
       title: "View More",
       path: "/services/Horeca-Procurement-Vendor-Management",
@@ -113,7 +113,7 @@ const ServiceData = [
     heading: "Marketing and Operations consulting",
     slug:"Marketing-and-Operations-consulting",
     subheading:
-      "We refine product portfolios and target segments to improve profitability, eliminate underperforming SKUs, and maximize revenue across customer categories.",
+      "Build a stronger business through smarter marketing, customer-focused strategies, and efficient operations that support sustainable growth. ",
     cta: {
       title: "View More",
       path: "/services/Marketing-and-Operations-consulting",
