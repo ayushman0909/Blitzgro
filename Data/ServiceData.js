@@ -18,7 +18,7 @@ const ServiceData = [
     heading: "Extended Sales Services",
     slug:"Extended-Sales-Services",
     subheading:
-      "Extend your sales capabilities with a team that doesn't just advise but executes. BlitzGro acts as your extended sales arm, helping you enter new markets, win customers, manage key accounts, and accelerate revenue growth. ",
+      "Extend your sales capabilities with a team that doesn't just advise but executes. BlitzGro acts as your extended sales arm, helping you enter new markets, win customers, manage key accounts, and accelerate revenue growth",
     cta: {
       title: "View More",
       path: "/services/Extended-Sales-Services",
