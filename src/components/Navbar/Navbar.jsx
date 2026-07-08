@@ -22,7 +22,6 @@ export default function Navbar() {
       name: "Marketing and Operations consulting",
       to: "/services/Marketing-and-Operations-consulting",
     },
-
   ];
 
   const caseStudiesList = [
@@ -36,23 +35,29 @@ export default function Navbar() {
     <nav className=" dark:bg-black border border-gray-200 dark:border-zinc-800 rounded-lg shadow-sm bg-gray-50 border-b-green-800  sticky top-0 z-50 ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
-          <div className="flex items-center justify-between">
-            <div className="shrink-0 w-1/4 sm:w-1/4 md:w-1/7  ">
+          <div className="flex w-full items-center justify-between">
+            <div className="shrink-0">
               <NavLink
-                to={"/"}
+                to="/"
                 onClick={() => {
                   window.scrollTo(0, 0);
                   setIsMenuOpen(false);
                 }}
               >
-                <img src={Logo} alt="Logo" className="" />
+                <img
+                  src={Logo}
+                  alt="BlitzGro Logo"
+                  className="h-14 w-auto"
+                  width={180}
+                  height={56}
+                />
               </NavLink>
             </div>
             <div className="hidden md:ml-6 md:flex md:space-x-8   justify-end gap-1 items-center ">
               {/* Home Link */}
               <NavLink
                 to={"/"}
-                 onClick={()=>window.scroll(0,0)}
+                onClick={() => window.scroll(0, 0)}
                 className={({ isActive }) =>
                   `inline-flex items-center gap-1 px-3 py-2 text-md  dark:text-gray-300 dark:hover:text-gray-50 font-medium  hover:text-black ${
                     isActive
@@ -278,29 +283,27 @@ export default function Navbar() {
           <NavLink
             to="/"
             onClick={() => {
-                  window.scrollTo(0, 0);
-                  setIsMenuOpen(false);
-                }}
+              window.scrollTo(0, 0);
+              setIsMenuOpen(false);
+            }}
             className="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-100 rounded-lg"
-            
           >
             Home
           </NavLink>
 
           {/* Services Dropdown */}
           <div className="flex justify-between items-center">
-          <NavLink
-            to={"/services"}
-            onClick={() => {
-              window.scrollTo(0, 0);
-              setIsMenuOpen(!isMenuOpen);
-            }}
-            className="w-full flex justify-between items-center px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-100 rounded-lg"
-          >
-            Services
-            
-          </NavLink>
-          <span
+            <NavLink
+              to={"/services"}
+              onClick={() => {
+                window.scrollTo(0, 0);
+                setIsMenuOpen(!isMenuOpen);
+              }}
+              className="w-full flex justify-between items-center px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-100 rounded-lg"
+            >
+              Services
+            </NavLink>
+            <span
               onClick={() => {
                 setMobileServicesOpen(!mobileServicesOpen);
               }}
@@ -310,7 +313,7 @@ export default function Navbar() {
             >
               ▼
             </span>
-            </div>
+          </div>
 
           {mobileServicesOpen && (
             <div className="ml-4 space-y-1">
