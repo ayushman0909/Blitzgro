@@ -39,7 +39,7 @@ export default function Navbar() {
           <div className="flex items-center justify-between">
             <div className="shrink-0 w-1/4 sm:w-1/4 md:w-1/7  ">
               <NavLink
-                to={"/home"}
+                to={"/"}
                 onClick={() => {
                   window.scrollTo(0, 0);
                   setIsMenuOpen(false);
@@ -51,7 +51,7 @@ export default function Navbar() {
             <div className="hidden md:ml-6 md:flex md:space-x-8   justify-end gap-1 items-center ">
               {/* Home Link */}
               <NavLink
-                to={"/home"}
+                to={"/"}
                  onClick={()=>window.scroll(0,0)}
                 className={({ isActive }) =>
                   `inline-flex items-center gap-1 px-3 py-2 text-md  dark:text-gray-300 dark:hover:text-gray-50 font-medium  hover:text-black ${
@@ -276,7 +276,7 @@ export default function Navbar() {
         <div className="px-4 py-4 space-y-2">
           {/* Home */}
           <NavLink
-            to="/home"
+            to="/"
             onClick={() => {
                   window.scrollTo(0, 0);
                   setIsMenuOpen(false);

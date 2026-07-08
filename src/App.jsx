@@ -38,8 +38,8 @@ const App = () => {
       <Navbar />
       <div className="px-1 h-auto">
         <Routes>
-          <Route path="/home" element={<Home />} />
-          <Route path='/' element={<Navigate to={"/home"} replace />} />
+          <Route path="/" element={<Home />} />
+         
           <Route path='/services' element={<Service />} />
           <Route path='/services/:slug' element={<ServiceDetail />} />
           <Route path='/about-us' element={<Aboutus />} />
