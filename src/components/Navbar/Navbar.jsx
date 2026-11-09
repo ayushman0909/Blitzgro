@@ -47,7 +47,7 @@ export default function Navbar() {
                 <img
                   src={Logo}
                   alt="BlitzGro Logo"
-                  className="h-14 w-auto"
+                  className="h-20 w-auto"
                   width={180}
                   height={56}
                 />
